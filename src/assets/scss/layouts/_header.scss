@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 68px;
+    margin-bottom: 50px;
+    
+    &__logo {
+        width: fit-content;
+        height: 100%;
+    }
+    &__nav {}
+}

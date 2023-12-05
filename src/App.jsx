@@ -3,10 +3,12 @@ import { Home } from './pages/Home.jsx';
 import { Logement } from './pages/Logement.jsx';
 import { Error_404 } from './pages/Error_404.jsx';
 import { About } from './pages/About.jsx';
+import { Header } from './layouts/Header.jsx';
 
 export function App() {
   return (
     <div className='main'>
+      <Header />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/Logement/:id' element={<Logement />} />
