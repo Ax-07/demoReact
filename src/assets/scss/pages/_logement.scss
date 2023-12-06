@@ -1,0 +1,19 @@
+.logement {
+    position: relative;
+    &__title {}
+    &__location {}
+    &__host {
+        position: absolute;
+        top: 439px;
+        right: 3px;
+    }
+    &__rating {
+        position: absolute;
+        top: 524px;
+        right: 0;
+    }
+    &__details {
+        display: flex;
+        gap: 76px;
+    }
+}

@@ -1,0 +1,18 @@
+.host {
+    display: flex;
+    align-items: center;
+    width: 167px;
+    height: 64px;
+    gap: 10px;
+
+    &__name {
+        width: fit-content;
+        height: fit-content;
+    }
+    &__picture {
+        width: 64px;
+        height: 64px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}

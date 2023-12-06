@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import url('https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css');
 
 * {
     font-family: 'Montserrat';
@@ -15,4 +16,67 @@
     line-height: 68.5px;
 
     color: #ffffff;
+}
+
+.card__title {
+    font-size: 18px;
+    line-height: 142.6%;
+
+    color: #ffffff;
+}
+
+.footer__copyright {
+    font-size: 24px;
+    line-height: calc(46px*142.6/100);
+
+    color: #ffffff;
+}
+
+.carrousel__index {
+    font-size: 18px;
+    line-height: 142.6%;
+
+    color: #ffffff;
+}
+
+.host__name {
+    font-size: 18px;
+    line-height: 142.6%;
+    text-align: right;
+
+    color: $color-primary;
+}
+
+.logement {
+    color: $color-primary;
+
+    &__title {
+        font-size: 36px;
+        line-height: 142.6%;
+    }
+
+    &__location {
+        font-size: 18px;
+        line-height: 142.6%;
+    }
+}
+
+.tags__item {
+    font-size: 14px;
+    line-height: 142.6%;
+    text-align: center;
+    color: #ffffff;
+}
+
+.dropDown {
+    &__title {
+        font-size: 18px;
+        line-height: 142.6%;
+        color: #ffffff;
+    }
+    &__content {
+        font-size: 18px;
+        line-height: 142.6%;
+        font-weight: 400;
+    }
 }

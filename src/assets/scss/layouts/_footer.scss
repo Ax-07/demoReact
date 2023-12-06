@@ -1,0 +1,32 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 209px;
+    gap: 28.556px;
+
+    padding: 66px 0 29px;
+
+    background: #000;
+    &__logo {
+        width: 122px;
+        height: 39.444px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-K {
+            align-self: flex-start;
+        }
+        &-icon {
+            align-self: flex-end;
+        }
+        &-S {}
+        &-A {}
+    }
+    &__copyright {
+        height: 46px;
+
+        
+    }
+}
