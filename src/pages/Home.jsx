@@ -1,7 +1,9 @@
+import { HeroBanner } from "../components/HeroBanner";
+
 export const Home = () => {
     return ( 
         <div>
-            Buy bitcoin
+            <HeroBanner />
         </div>
     );
 };

@@ -1,0 +1,16 @@
+.hero-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 223px;
+    
+    background-image: url("src/assets/images/e270fc8fc902a1eb738458e7b29c1899.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border-radius: 25px;
+    // opacity: 30%; /* probleme */
+    mix-blend-mode: darken; /* probleme */
+}
