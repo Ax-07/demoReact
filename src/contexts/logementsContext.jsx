@@ -6,9 +6,10 @@ export const LogementsContext = createContext();
 
 export const LogementsProvider = ({ children }) => {
     const [logements, setLogements] = useState([]);
+    const url = "../src/db/annoncesLogements.json";
 
     useEffect(() => {
-        getAllData()
+        getAllData(url)
             .then((data) => {
                 setLogements(data);
             })
@@ -18,7 +19,7 @@ export const LogementsProvider = ({ children }) => {
     }, []);
     console.log(logements);
     return (
-        <LogementsContext.Provider value={[logements]}>
+        <LogementsContext.Provider value={logements}>
             {children}
         </LogementsContext.Provider>
     );
