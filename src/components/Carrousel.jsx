@@ -22,21 +22,25 @@ export const Carrousel = ({ logement }) => {
     <div className="carrousel">
       <div className="carrousel__mask"></div>
       <img className="carrousel__img" src={pictures[index]} alt="" />
-      <span className="carrousel__index">
-        {index + 1}/{pictures.length}
-      </span>
-      <div
-        className="carrousel__arrow carrousel__arrow-left"
-        onClick={previousPicture}
-      >
-        <img src={left_arrow} alt="" />
-      </div>
-      <div
-        className="carrousel__arrow carrousel__arrow-right"
-        onClick={nextPicture}
-      >
-        <img src={right_arrow} alt="" />
-      </div>
+      {pictures.length > 1 ? (
+        <>
+          <span className="carrousel__index">
+            {index + 1}/{pictures.length}
+          </span>
+          <div
+            className="carrousel__arrow carrousel__arrow-left"
+            onClick={previousPicture}
+          >
+            <img src={left_arrow} alt="" />
+          </div>
+          <div
+            className="carrousel__arrow carrousel__arrow-right"
+            onClick={nextPicture}
+          >
+            <img src={right_arrow} alt="" />
+          </div>
+        </>
+      ) : null}
     </div>
   );
 };
