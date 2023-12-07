@@ -1,20 +1,10 @@
-import { useState, useEffect } from "react";
-import { getAllData } from "../services/api/logementApi.js";
 import { Card } from "../components/Card.jsx";
+import { useContext } from "react";
+import { LogementsContext } from "../contexts/logementsContext.jsx";
 
 export const Gallery = () => {
-    const [ logements, setLogements ] = useState([]);
-
-    useEffect(() => {
-        getAllData()
-          .then((data) => {
-            setLogements(data);
-          })
-          .catch((err) => {
-            console.log(err);
-          });
-      }, []);
-console.log(logements);
+  const logements = useContext(LogementsContext);
+    
   return (
     <section className="gallery">
       {logements &&
