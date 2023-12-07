@@ -5,9 +5,7 @@ export const Host = ({logement}) => {
     return (
         <div className='logement__host host'>
             <div className='host__name'>{host.name}</div>
-            <div >
-                <img className='host__picture' src={host.picture} alt={host.name} />
-            </div>
+            <img className='host__picture' src={host.picture} alt={host.name} />
         </div>
     );
 };

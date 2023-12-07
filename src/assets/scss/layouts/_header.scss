@@ -2,12 +2,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 68px;
     margin-bottom: 50px;
     
     &__logo {
-        width: fit-content;
-        height: 100%;
+        height: 68px;
     }
     &__nav {}
+}
+
+@media (max-width: 1023px) {
+    .header {
+        height: 100%;
+        margin-bottom: 19px;
+        &__logo {
+            width: 145px;
+            height: 46.9px;
+        }
+    }
 }

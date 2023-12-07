@@ -3,7 +3,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    // width: 582px;
     flex: 1;
     max-height: 52px;
     border-radius: 5px;
@@ -11,18 +10,19 @@
     transition: all 0.3s ease-in-out;
 
     &--open {
-        max-height: 1000px;
+        max-height: 1000px !important;
+
         .dropDown__btn {
             transform: rotate(-180deg);
         }
+
         .dropDown__content {
             transform: translateY(0);
-            // top: 0;
         }
     }
+
     &__content {
         position: relative;
-        // top: -100%;
         display: flex;
         padding: 70px 20px 20px 20px;
         align-items: flex-start;
@@ -33,7 +33,7 @@
         transform: translateY(-100%);
         z-index: -1;
 
-background: var(--Gray, #F6F6F6);
+        background: var(--Gray, #F6F6F6);
     }
 
     &__topBar {
@@ -51,6 +51,8 @@ background: var(--Gray, #F6F6F6);
     &__title {}
 
     &__btn {
+        position: absolute;
+        right: 15px;
         width: 32px;
         height: 32px;
         transform: rotate(0deg);
@@ -70,4 +72,20 @@ background: var(--Gray, #F6F6F6);
     }
 
     &__description {}
+}
+
+@media (max-width: 1024px) {
+    .dropDown {
+        max-height: 30px;
+        &__topBar {
+            height: 30px;
+            padding: 10px 6px 10px 10px;
+        }
+        &__content {
+            padding: 43px 20px 19px 20px;
+        }
+        &__btn {
+            right: 6px;
+        }
+    }
 }

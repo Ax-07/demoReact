@@ -16,7 +16,8 @@
 
 @media (max-width: 768px) {
     .gallery {
+        padding: 0;
         grid-template-columns: 1fr;
-        gap: 50px 0;
+        gap: 20px 0;
     }
 }

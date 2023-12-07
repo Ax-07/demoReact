@@ -25,8 +25,10 @@ export const Logement = () => {
           <h1 className="logement__title">{logement.title}</h1>
           <p className="logement__location">{logement.location}</p>
           <Tags logement={logement} />
-          <Host logement={logement} />
-          <Rating logement={logement} />
+          <div className="logement__wrapper">
+            <Rating logement={logement} />
+            <Host logement={logement} />
+          </div>
 
           <div className="logement__details">
             <DropDown title={"Description"}>

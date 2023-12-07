@@ -1,5 +1,7 @@
 .logement {
     position: relative;
+    display: flex;
+    flex-direction: column;
     &__title {}
     &__location {}
     &__host {
@@ -15,5 +17,35 @@
     &__details {
         display: flex;
         gap: 76px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .logement {
+        &__title {
+            margin-bottom: 5px;
+        }
+        &__wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 13px;
+        }
+        &__host {
+            position: relative;
+            top: 0;
+            right: 0;
+        }
+        &__rating {
+            position: relative;
+            top: 0;
+            right: 0;
+        }
+        &__details {
+            flex-direction: column;
+            gap: 20px;
+        }
+
     }
 }

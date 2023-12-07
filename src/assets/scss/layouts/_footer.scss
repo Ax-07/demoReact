@@ -1,6 +1,7 @@
 .footer {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
 
     height: 209px;
@@ -25,8 +26,21 @@
         &-A {}
     }
     &__copyright {
-        height: 46px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        text-align: center;
 
-        
+        height: 46px;
     }
+}
+
+@media (max-width: 1023px) {
+    .footer{
+        padding: 66px 0 58px;
+
+    &__copyright {
+        width: 133.594px;
+    }
+}
 }

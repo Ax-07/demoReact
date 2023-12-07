@@ -31,15 +31,37 @@
     &__arrow {
         position: absolute;
         z-index: 3;
+        top: 149px;
 
         &-left {
-            top: 149px;
             left: 23.36px;
         }
 
         &-right {
-            top: 149px;
             right: 23.3px;
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .carrousel {
+        height: 255px;
+        border-radius: 10px;
+        &__index {
+            display: none;
+        }
+        &__arrow {
+            top: inherit;
+            width: 24px;
+            height: 24px;
+            padding: 2px;
+            
+            &-right {
+                right: 0;
+            }
+            &-left {
+                left: 0;
+            }
         }
     }
 }

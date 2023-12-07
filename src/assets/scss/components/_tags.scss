@@ -1,6 +1,7 @@
 .tags {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     margin: 20px 0 24px 0;
     gap: 10px;
 
@@ -14,5 +15,15 @@
 
         border-radius: 10px;
         background: #FF6060;
+    }
+}
+
+@media (max-width: 1023px) {
+    .tags {
+        margin: 10px 0 16px;
+        &__item {
+            min-width: 84px;
+            height: 18px;
+        }
     }
 }

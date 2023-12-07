@@ -27,18 +27,15 @@ export const Carrousel = ({ logement }) => {
           <span className="carrousel__index">
             {index + 1}/{pictures.length}
           </span>
-          <div
+          <img src={left_arrow} alt="" 
             className="carrousel__arrow carrousel__arrow-left"
             onClick={previousPicture}
-          >
-            <img src={left_arrow} alt="" />
-          </div>
-          <div
+          />
+
+          <img src={right_arrow} alt="" 
             className="carrousel__arrow carrousel__arrow-right"
             onClick={nextPicture}
-          >
-            <img src={right_arrow} alt="" />
-          </div>
+          />
         </>
       ) : null}
     </div>

@@ -4,66 +4,58 @@
 * {
     font-family: 'Montserrat';
     font-weight: 500;
+    line-height: 142.6%;
+    color: $color-primary;
 }
 
 .navBar__link {
     font-size: 24px;
-    line-height: 34px;
+    line-height: 142.6%;
 }
 
 .hero-banner {
-    font-size: 48px;
-    line-height: 68.5px;
-
-    color: #ffffff;
+    &__title {
+        font-size: 48px;
+        text-align: center;
+        color: #ffffff;
+    }
 }
 
 .card__title {
     font-size: 18px;
-    line-height: 142.6%;
-
     color: #ffffff;
 }
 
 .footer__copyright {
     font-size: 24px;
-    line-height: calc(46px*142.6/100);
-
     color: #ffffff;
 }
 
 .carrousel__index {
     font-size: 18px;
-    line-height: 142.6%;
-
     color: #ffffff;
 }
 
 .host__name {
     font-size: 18px;
-    line-height: 142.6%;
     text-align: right;
 
     color: $color-primary;
 }
 
 .logement {
-    color: $color-primary;
 
     &__title {
         font-size: 36px;
-        line-height: 142.6%;
     }
 
     &__location {
         font-size: 18px;
-        line-height: 142.6%;
     }
 }
 
 .tags__item {
     font-size: 14px;
-    line-height: 142.6%;
     text-align: center;
     color: #ffffff;
 }
@@ -71,12 +63,10 @@
 .dropDown {
     &__title {
         font-size: 18px;
-        line-height: 142.6%;
         color: #ffffff;
     }
     &__content {
         font-size: 18px;
-        line-height: 142.6%;
         font-weight: 400;
     }
 }
@@ -87,16 +77,56 @@
         text-align: center;
         font-size: 288px;
         font-weight: 700;
-        line-height: 142.6%;
     }
     &__text {
         color: #FF6060;
         font-size: 36px;
-        line-height: 142.6%;
         &-sm {
             color: #FF6060;
             font-size: 18px;
-            line-height: 142.6%;
+            }
+    }
+}
+
+@media (max-width: 1023px) {
+    .navBar__link {
+        font-size: 12px;
+    }
+    .hero-banner {
+        &__title {
+            font-size: 24px;
+            line-height: 24px;
+            text-align: left;
         }
+    }
+    .footer__copyright {
+        font-size: 12px;
+    }
+    .dropDown {
+        &__title {
+            font-size: 13px;
+        }
+        &__content {
+            font-size: 12px;
+        }
+    }
+    .logement {
+
+        &__title {
+            font-size: 18px;
+        }
+    
+        &__location {
+            font-size: 14px;
+        }
+    }
+    .host__name {
+        font-size: 12px;
+        text-align: right;
+    
+        color: $color-primary;
+    }
+    .tags__item {
+        font-size: 10px;
     }
 }

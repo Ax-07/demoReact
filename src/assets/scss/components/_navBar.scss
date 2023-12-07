@@ -18,3 +18,11 @@
         }
     }
 }
+
+@media (max-width: 1024px) {
+    .navBar {
+        &__list {
+            gap: 26px;
+        }
+    }
+}

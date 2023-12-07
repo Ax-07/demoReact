@@ -6,6 +6,7 @@
 
     &__item {
         display: flex;
+        justify-content: center;
         color: $color-gray-light;
 
         &::before {
@@ -19,6 +20,18 @@
 
         &--rated {
             color: $color-primary;
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .rating {
+        width: 98px;        
+        &__item {
+            &::before {
+                font-size: 13px;
+                line-height: 18px;
+            }
         }
     }
 }

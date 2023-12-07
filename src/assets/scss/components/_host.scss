@@ -1,18 +1,31 @@
 .host {
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     width: 167px;
     height: 64px;
     gap: 10px;
 
     &__name {
-        width: fit-content;
-        height: fit-content;
+        width: min-content;
     }
     &__picture {
         width: 64px;
         height: 64px;
         object-fit: cover;
         border-radius: 50%;
+    }
+}
+
+@media (max-width: 1023px) {
+    .host {
+        width: 135.5px;
+        height: 33px;
+        gap: 10.5px;
+
+        &__picture {
+            width: 32px;
+            height: 32px;
+        }
     }
 }
